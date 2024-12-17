@@ -2,7 +2,19 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    overflow-x: hidden;
 }
+
+html {
+
+    overflow-x: hidden;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
 
 h1, h2, h4 {
     margin: 0;
@@ -20,7 +32,7 @@ header {
 }
 
 /* Navbar Styles */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,10 +77,10 @@ header {
     border: none;
     background: none;
     cursor: pointer;
-}
+} */
 
 /* Responsive Navbar */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .navbar .menu {
         display: none;
         flex-direction: column;
@@ -88,13 +100,10 @@ header {
     .hamburger {
         display: block;
     }
-}
+} */
 
 /* Rest of the Styles */
-.quality-index {
-    margin: 20px auto;
-    max-width: 800px;
-}
+
 
 .uniform-section {
     display: flex;
@@ -131,8 +140,6 @@ p {
 .quality-index img {
     display: block;
     margin: 0 auto;
-    width: 100%;
-    max-width: 800px; /* Limits image width */
 }
 
 .uniform-section h2 {
@@ -170,7 +177,6 @@ p {
 }
 
 .about {
-    background-color: #f9f9f9;
     padding: 20px;
     text-align: center;
     margin-top: 40px;
@@ -201,7 +207,7 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .uniform-section {
         flex-direction: column;
         align-items: center;
@@ -229,12 +235,12 @@ p {
     .footer .links div {
         text-align: center;
     }
-}
+} */
 
-.kanit-medium{
+/* .kanit-medium{
     font-family: 'kanit', 'serif';
     transition: 0.8s;
-}
+} */
 
 .bg-gradient{
    background: linear-gradient(180deg, #6ac87e8a, #fff);
@@ -296,9 +302,9 @@ p {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 600px) {
-    
-    html{
-        width: 100vw;
-    }
+.medical{
+    background-image: url('./images/medical.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
