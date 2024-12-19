@@ -141,10 +141,35 @@
 .bg-gradient{
    background: linear-gradient(180deg, #6ac87e8a, #fff);
 }
+.bg-gradient-rev{
+   background: linear-gradient(360deg, #6ac87e8a, #fff);
+}
 
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.kanit-medium {
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
 
     </style>
      <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="dist/output.css">
 </head>
 <body>
     <nav class="bg-gradient">
@@ -206,18 +231,21 @@
         </div>
       </nav>
     <div class="container w-[80%] mx-auto py-12 my-6">
-        <h1 class="font-bold text-5xl text-center my-6">Products</h1>
-        <p class="font-semibold text-2xl text-center mb-8">We have best quality clothes available</p>
-        <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4">
+        <h1 class="font-bold text-5xl max-sm:text-4xl text-center kanit-semibold">Products</h1>
+        <p class=" text-2xl max-sm:text-xl text-center mb-8 kanit-regular">We have best quality clothes available</p>
+        <div class=" grid grid-cols-2 max-sm:grid-cols-1 my-6 pt-10 gap-4 max-sm:gap-0">
             <div class=" max-sm:py-4">
-                <img src="images/schooluniform.png" class="rounded-md w-[70%] ml-10% max-sm:mx-auto" alt="">
+                <img src="imgs-comp/schooluniform.webp" class="rounded-md w-[70%] ml-10% max-sm:mx-auto" alt="">
             </div>
            
-            <div class=" max-sm:py-4 mt-16">
-                <h3 class="font-semibold text-2xl my-4"> Best quality of clothes available,</h3>
+            <div class=" max-sm:py-4 md:mt-16 sm:text-center">
+                <h3 class="font-semibold text-2xl my-2 max-sm:text-center kanit-medium "> Best quality of clothes available,</h3>
                
-                <p class="font-normal text-1xl">
-                    We have many uniforms like: College uniforms, School uniforms, Hospital Uniforms, Police Uniforms, Corporate uniforms, etc.
+                <p class="font-normal text-1xl max-sm:text-center kanit-regular">
+                    Our uniform collection is crafted from durable, comfortable fabrics designed to provide a professional, polished look while ensuring comfort throughout the day. Whether for healthcare, corporate, or hospitality industries, our uniforms combine style, practicality, and durability to meet the demands of various work environments.
+                </p>
+                <p class="font-normal text-1xl max-sm:text-center kanit-regular my-2">
+                    Additionally, our uniform innerwear is designed with comfort in mind, providing essential support for both adults and children. Made from soft, breathable materials, our innerwear ensures a smooth fit and lasting comfort, making it the perfect foundation for any uniform. Whether for work or school, Novelty Dresses provides dependable, quality clothing solutions that meet your needs with excellence.
                 </p>
                 
             </div>
@@ -225,81 +253,89 @@
 
         <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-6">
             <div class=" max-sm:py-4 mt-16">
-                    <h3 class="font-semibold text-2xl my-4">School Uniforms</h3>
-                    <p class="font-normal text-1xl mb-4 text-gray-600">High-quality, durable, breathable, and wrinkle-resistant fabrics to ensure comfort and longevity.</p>
+                    <h3 class="font-semibold text-2xl my-4 kanit-medium">School Uniforms</h3>
+                    <p class="font-normal text-1xl mb-4 text-gray-600 kanit-regular">
+                        For school uniforms, we offer a wide range of styles that prioritize comfort, durability, and ease of movement, making them perfect for active students. Our school uniforms are designed to withstand daily wear while maintaining a crisp, neat appearance, helping students feel confident and comfortable throughout their school day.
+                    </p>
         
-                    <h3 class="font-semibold text-2xl my-4">Nursery Uniform</h3>
-                    <p class="font-normal text-1xl mb-4 text-gray-600">Soft, durable, and breathable fabrics to ensure comfort and longevity for young kids.</p>
+                    <h3 class="font-semibold text-2xl my-4 kanit-medium">Nursery Uniform</h3>
+                    <p class="font-normal text-1xl mb-4 text-gray-600 kanit-regular">
+                        Novelty Dresses specializes in high-quality, durable, and stylish kids' uniforms. We offer a wide range of comfortable and affordable options for schools, ensuring every child looks smart and feels confident. Our commitment to quality and customer satisfaction makes us the trusted choice for uniforms.
+                    </p>
                 
             </div>
-            <div class=" max-sm:py-4 flex justify-between">
-                <img src="images/kids.jpg" class="rounded-md w-[40%] mx-auto" alt="">
-                <img src="images/kids.jpg" class="rounded-md w-[40%] mx-auto" alt="">
+            <div class=" max-sm:py-4 flex justify-between max-sm:row-start-1">
+                <img src="imgs-comp/nov221.webp" class="rounded-md w-[40%] mx-auto" alt="">
+                <img src="imgs-comp/nov22.webp" class="rounded-md w-[40%] mx-auto" alt="">
             </div>
 
         </div>
 
     </div>
 
-    <div class="my-6">
+    <div class="my-6 px-4">
 
-        <h2 class="font-semibold text-3xl my-4 text-center"> School Uniforms</h2>
-        <p class="font-normal text-1xl mb-4 text-gray-600 text-center">Soft, durable, and breathable fabrics to ensure comfort and longevity for young kids.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
-            <div class="grid gap-4">
+        <h2 class="font-semibold text-3xl my-4 text-center "> School Uniforms</h2>
+        <p class="font-normal text-1xl mb-4 text-gray-600 text-center">
+           
+        </p>
+        <div class="grid grid-cols-2 md:grid-cols-3 max-sm:gap-[3%] lg:gap-[10%] my-8 py-16 max-sm:px-[10%] md:px-[12%] bg-gradient-rev">
+            <div class="grid gap-[3%]">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prd-1.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg  hover:outline-green-900 outline outline-green-700 outline-offset-2  " src="./imgs-comp/prd-1.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-2.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-2.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-11.png" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-12.png" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-3.png" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-4.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-3.webp" alt="">
                 </div>
             </div>
-            <div class="grid gap-4">
+            <div class="grid gap-[3%] max-sm:mb-4">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-5.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-12.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-6.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-5.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-7.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-11.webp" alt="">
                 </div>
             </div>
-            <div class="grid gap-4">
+            <div class="grid gap-[3%] max-sm:mb-10 ">
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-8.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-8.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-9.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-9.webp" alt="">
                 </div>
                 <div>
-                    <img class="h-auto max-w-full rounded-lg" src="./images/prod-10.png" alt="">
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-10.jpg" alt="">
                 </div>
+               
+            </div>
+            <div class="grid gap-[3%] max-sm:mb-10 md:hidden">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline-green-500 outline outline-green-700 outline-offset-2 " src="imgs-comp/prod-2.webp" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-5.webp" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg hover:outline-green-900 outline outline-green-700 outline-offset-2 " src="./imgs-comp/prod-8.webp" alt="">
+                </div>
+                
             </div>
         </div>
         
     </div>
 
 
-    <div class="bg-white">
-        <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <div class="bg-white px-[10%] max-sm:px-[25%]">
+        <div class="mx-auto max-w-2xl px-[20px] py-16  sm:py-24 lg:max-w-7xl lg:px-[10%]">
           <h2 class="font-bold text-3xl my-4 text-center">Clothes We Provide</h2>
       
-          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
+          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[5%]">
             <a href="#" class="group">
               <img src="./images/Mafatlal_logo.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
             </a>
@@ -320,39 +356,41 @@
       
 
       <footer class="bg-white dark:bg-gray-900">
-        <div class="container px-6 py-14 mx-auto ">
+        <div class="container px-6 pt-14 mx-auto ">
             <div class="lg:flex justify-center">
                 <div class="w-full  lg:w-2/5  ">
-                    <div class="px-6">
-                        <a href="#" class="">
-                            <img class="w-auto h-[8rem] max-sm:mx-auto " src="./images/Novelty logo.png" alt="">
+                    <div class="px-0">
+                        <a href="./index.html" class="">
+                            <img class="w-auto h-[8rem] mx-auto " src="./images/Novelty logo.png" alt="">
                         </a>
     
-                        <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut consequuntur eius recusandae sunt aspernatur harum voluptatem quibusdam perspiciatis.</p>
+                        <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 text-center">
+                         
+                          Branch 1 - Main Road, Malaviya Chowk, Jabalpur - 482002 (Near George Town Market) | 
+                          <br>
+                          Branch 2 - Deshbandhu Complex, Naudra Bridge,  Jabalpur - 482001
+  
+  
+                        </p>
     
                         <div class="flex mt-6 -mx-2 justify-center ">
-                            <a href="#"
+                            <a href="https://www.instagram.com/noveltydresses"
                                 class="mx-2 text-gray-800 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                 aria-label="Reddit">
-                              <img src="./images/black-instagram-icon.svg" alt="" class="w-5" srcset="">
+                              <img src="./imgs-comp/black-instagram-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
                               
                             </a>
                         
-                            <a href="#"
-                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                aria-label="Facebook">
-                                <img src="./images/linkedin-square-icon.svg" alt="" class="w-5" srcset="">
-                            </a>
-                        
-                            <a href="#"
-                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                aria-label="Github">
-                                <img src="./images/youtube-icon.svg" alt="" class="w-5" srcset="">
-                            </a>
-                            <a href="#"
+                            <a href="https://wa.me/917612481581"
                             class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                             aria-label="Github">
-                            <img src="./images/facebook-app-round-icon.svg" alt="" class="w-5" srcset="">
+                            <img src="./imgs-comp/whatsapp-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
+                        </a>
+  
+                            <a href="https://www.facebook.com/Noveltydresses"
+                            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                            aria-label="Github">
+                            <img src="./imgs-comp/facebook-app-round-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
                         </a>
                         </div>
                     </div>
@@ -383,8 +421,8 @@
     
                         <div class="text-center">
                             <h3 class="text-gray-900 text-lg font-bold uppercase dark:text-white my-4">Contact</h3>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 526 654 8965</span>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">example@email.com</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 07612481581</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">noveltydresses1@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -393,7 +431,7 @@
             <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
     
             <div class="text-center">
-                <p class="text-center text-gray-500 dark:text-gray-400">© Brand 2024 - All rights reserved</p>
+                <p class="text-center text-gray-500 dark:text-gray-400 mx-auto">© Novelty Dresses - All rights reserved | Made with ❤️ by STARIAL </p>
             </div>
         </div>
     </footer>

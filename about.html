@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novelty Dresses</title>
     <link rel="stylesheet" href="about.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
     <style>
        body {
     margin: 0;
@@ -130,6 +133,26 @@
 }
 
 
+.kanit-regular {
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.kanit-medium {
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .kanit-semibold {
+    font-family: "Kanit", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+
     </style>
 </head>
 <body>
@@ -210,24 +233,55 @@
       
     <!-- About Us Section -->
     <section id="about" class="about-section">
-        <h2 class=" font-bold text-[2.5rem] max-sm:text-[2rem] ">About Us</h2>
-        <p class="max-sm:text-[0.8rem] text-[1.2rem]">We are Novelty Dresses, your trusted partner for all types of uniforms and clothing. Whether you need professional attire, school uniforms, corporate wear, or casual clothing, we are here to cater to all your needs with unmatched quality and style. Our mission is to provide versatile and durable apparel that combines comfort with elegance, ensuring you look your best for every occasion.</p>
+        <h2 class=" font-bold text-[2.5rem]  kanit-semibold  max-sm:text-[2rem] ">About Us</h2>
+        <p class="max-sm:text-[0.8rem] text-[1.2rem] kanit-regular">We are Novelty Dresses, your trusted partner for all types of uniforms and clothing. Whether you need professional attire, school uniforms, corporate wear, or casual clothing, we are here to cater to all your needs with unmatched quality and style. Our mission is to provide versatile and durable apparel that combines comfort with elegance, ensuring you look your best for every occasion.
+        </p>
+        <p class="max-sm:text-[0.8rem] text-[1.2rem] kanit-regular">
+            Novality Dresses, established in 1969, has been a trusted name in providing premium school uniforms, innerwear, and accessories online. With over 500 uniform combinations, they offer a wide range of high-quality products, including school bags, socks, belts, ties, sweaters, blazers, fleece hoodie sets, and scrum uniforms. Their commitment to excellence is reflected in their use of top-tier fabrics, great packing, and attention to detail. Shop with Novality Dresses for unmatched quality and convenience in schoolwear and uniforms.
+            <br>
+            Since 1969, Novality Dresses has been your trusted online destination for premium school uniforms, accessories, and more! With over 500 combinations, we deliver top-quality fabrics, great packing, and unmatched convenience for all your schoolwear needs.
+        </p>
     </section>
 
     <!-- Product Section -->
     <section id="products" class="products-section">
         <div class="image-container">
-            <img src="images/Screenshot 2024-12-06 154410.png" alt="">
+            <img src="./imgs-comp/about-hero.webp" alt="">
         </div>
-        <div class="text-container px-12 max-w-[80%] mx-auto max-sm:px-6">
-            <h3 class="font-bold text-[2.5rem] max-sm:text-[2rem] text-center">At Novelty Dresses</h3>
-            <p  class="max-sm:text-[0.8rem] text-[1.2rem]" >The Novelty Dresses started in 1969 &  also get manufacturing award.
-                We also have many school uniforms like : Christ Church, Satya Prakash Public school, Kangaroo School, Bilabong High International School, 
-                St.Aloysious School, Josaf School, Kendriya Vidhyalay, GD GOinka School Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur deleniti doloribus et Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eos accusamus exercitationem earum commodi est, fugit numquam dolorem assumenda facilis magni voluptatem.
+        <div class="text-container md:px-12 max-w-[80%] mx-auto max-sm:px-0">
+            <h3 class="font-bold text-[2.5rem] max-sm:text-[2rem] my-6 text-center kanit-medium">At Novelty Dresses</h3>
+            <p  class="max-sm:text-[0.8rem] text-[1.2rem] kanit-regular " >
+                At Novelty Dresses, we are your reliable partner for high-quality uniforms, school uniforms, and uniform innerwear. Our uniform collection is crafted from durable, comfortable fabrics designed to provide a professional, polished look while ensuring comfort throughout the day. Whether for healthcare, corporate, or hospitality industries, our uniforms combine style, practicality, and durability to meet the demands of various work environments.
+For school uniforms, we offer a wide range of styles that prioritize comfort, durability, and ease of movement, making them perfect for active students. Our school uniforms are designed to withstand daily wear while maintaining a crisp, neat appearance, helping students feel confident and comfortable throughout their school day.
             </p>
         </div>
     </section>
 
+
+    <div class="my-8 py-12 bg-gradient">
+        <h2 class="my-6 kanit-medium text-4xl text-center">Our Founder</h2>
+        <section class="about grid grid-cols-2 max-sm:grid-cols-1  gap-6 lg:w-[80%] mx-auto py-12 my-4" id="about">
+            <div class=" ">
+              <img src="imgs-comp/founder-img.webp" alt="Store Image" class="w-[60%] min-w-[200px] rounded-lg mx-auto">
+            </div>
+              <div class=" px-10">
+                <h3 class="font-bold font-sans text-2xl mb-4 kanit-medium">Shri Arvind Jain</h3>
+                <p class="kanit-regular">
+                    Shri Arvind Jain’s journey is a testament to unwavering determination, resilience, and hard work. Starting in 1969 with a small textile shop, he dared to dream big despite the modest beginnings. Born into a humble family, he faced numerous challenges in establishing his business, but his relentless spirit and a vision for success kept him moving forward.
+
+                    With long hours of dedication and an eye for quality, Shri Jain gradually built a reputation for reliability and excellence in textiles. His passion for serving his customers extended beyond mere transactions; he believed in creating lasting relationships based on trust and satisfaction.
+                </p>
+                <p class="kanit-regular my-4">
+                    Over the years, he expanded the business to include a variety of clothing, from school uniforms to innerwear, becoming a trusted name in the industry. In the face of changing markets and economic downturns, Shri Jain’s perseverance never wavered. He constantly adapted to the evolving needs of his customers, ensuring that his products remained affordable and of the highest quality.
+
+                    His story isn’t just about selling fabrics; it’s about weaving dreams and opportunities for countless families. His relentless pursuit of excellence has transformed that small shop into Novality Dresses, a brand synonymous with trust and reliability in the clothing industry.
+                </p>  
+                    <p class="kanit-regular my-4">  
+                    Today, Novality Dresses stands tall as a testament to one man’s vision, grit, and dedication to his craft. Shri Arvind Jain’s journey inspires generations to believe that with hard work, perseverance, and an unwavering commitment to one’s values, success is within reach for anyone willing to strive for it.
+                </p>
+              </div>
+          </section>
+    </div>
     <!-- Footer -->
     <!-- <footer class="footer">
         <div class="footer-content">
@@ -255,39 +309,41 @@
         </div>
     </footer> -->
     <footer class="bg-white dark:bg-gray-900">
-        <div class="container px-6 py-14 mx-auto ">
+        <div class="container px-6 pt-14 mx-auto ">
             <div class="lg:flex justify-center">
                 <div class="w-full  lg:w-2/5  ">
-                    <div class="px-6">
-                        <a href="#" class="">
-                            <img class="w-auto h-[8rem] max-sm:mx-auto " src="./images/Novelty logo.png" alt="">
+                    <div class="px-0">
+                        <a href="./index.html" class="">
+                            <img class="w-auto h-[8rem] mx-auto " src="./images/Novelty logo.png" alt="">
                         </a>
     
-                        <p class="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut consequuntur eius recusandae sunt aspernatur harum voluptatem quibusdam perspiciatis.</p>
+                        <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 text-center">
+                         
+                          Branch 1 - Main Road, Malaviya Chowk, Jabalpur - 482002 (Near George Town Market) | 
+                          <br>
+                          Branch 2 - Deshbandhu Complex, Naudra Bridge,  Jabalpur - 482001
+  
+  
+                        </p>
     
                         <div class="flex mt-6 -mx-2 justify-center ">
-                            <a href="#"
+                            <a href="https://www.instagram.com/noveltydresses"
                                 class="mx-2 text-gray-800 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                                 aria-label="Reddit">
-                              <img src="./images/black-instagram-icon.svg" alt="" class="w-5" srcset="">
+                              <img src="./imgs-comp/black-instagram-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
                               
                             </a>
                         
-                            <a href="#"
-                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                aria-label="Facebook">
-                                <img src="./images/linkedin-square-icon.svg" alt="" class="w-5" srcset="">
-                            </a>
-                        
-                            <a href="#"
-                                class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                aria-label="Github">
-                                <img src="./images/youtube-icon.svg" alt="" class="w-5" srcset="">
-                            </a>
-                            <a href="#"
+                            <a href="https://wa.me/917612481581"
                             class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                             aria-label="Github">
-                            <img src="./images/facebook-app-round-icon.svg" alt="" class="w-5" srcset="">
+                            <img src="./imgs-comp/whatsapp-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
+                        </a>
+  
+                            <a href="https://www.facebook.com/Noveltydresses"
+                            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                            aria-label="Github">
+                            <img src="./imgs-comp/facebook-app-round-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
                         </a>
                         </div>
                     </div>
@@ -318,8 +374,8 @@
     
                         <div class="text-center">
                             <h3 class="text-gray-900 text-lg font-bold uppercase dark:text-white my-4">Contact</h3>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 526 654 8965</span>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">example@email.com</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 07612481581</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">noveltydresses1@gmail.com</span>
                         </div>
                     </div>
                 </div>
@@ -328,7 +384,7 @@
             <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
     
             <div class="text-center">
-                <p class="text-center text-gray-500 dark:text-gray-400">© Brand 2024 - All rights reserved</p>
+                <p class="text-center text-gray-500 dark:text-gray-400 mx-auto">© Novelty Dresses - All rights reserved | Made with ❤️ by STARIAL </p>
             </div>
         </div>
     </footer>
