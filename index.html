@@ -234,6 +234,7 @@ p {
     }
 }
     </style>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />      
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,8 +246,9 @@ p {
 </head>
 <body>
 
-    <nav class="bg-gradient">
-        <div class=" w-[90%] px-2 sm:px-6 lg:px-8 py-4">
+    <nav class="hero-i h-[100vh]">
+      <div class="absolute  top-0 bg-gradient2 h-[100vh] w-full"></div>
+        <div class="w-full fixed top-0 px-2 sm:px-6 lg:px-8 py-4 z-10  " id="navb">
           <div class="relative flex h-16 items-center justify-between">
             <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
               <!-- Mobile menu button-->
@@ -279,7 +281,7 @@ p {
               <div class="hidden sm:ml-2 sm:block">
                 <div class="flex space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                  <a href="./index.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600 " aria-current="page">Home</a>
+                  <a href="./index.html" class="rounded-md px-3 py-2 grn text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600 " aria-current="page">Home</a>
                   <a href="./about.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">About Us</a>
                   <a href="./product.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Products</a>
                   <a href="./index.html#career" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Career</a>
@@ -290,6 +292,8 @@ p {
           
           </div>
         </div>
+        <h2 class="font-bold text-[2.5rem] max-sm:text-[2rem] text-green-600 absolute top-60 w-full">Welcome to Novelty Dresses
+      </h2>
       
         <!-- Mobile menu, show/hide based on menu state. -->
         <div class=" sm:hidden hidden" id="mobile-menu">
@@ -303,16 +307,11 @@ p {
           </div>
         </div>
       </nav>
-      
 
-    <header id="home" class="bg-white px-16 max-md:px-4">
-        <h2 class="font-bold text-[2.5rem] max-sm:text-[2rem] text-left">Welcome to Novelty Dresses
-            <p>Explore Now !!</p>
-        </h2>
-    </header>
+  
 
-    <div class="wrapper">
-        <i id="left" class="fa-solid  fas fa-angle-left"></i>
+    <div class="wrapper pt-16">
+        <i id="left" class="fa-solid  fas fa-angle-left" style="color: #6e756f;"></i>
         <ul class="carousel">
           <a href="./medical-uniform.html">
             <li class="card  " id="one">
@@ -348,6 +347,11 @@ p {
               </li>
             </a>
            
+            
+            <a href="./medical-uniform.html">
+              <li class="card"  id="seven">
+              </li>
+            </a>
 
             
             <a href="./medical-uniform.html">
@@ -356,7 +360,7 @@ p {
             </a>
            
         </ul>
-        <i id="right" class="fa-solid fas fa-angle-right"></i>
+        <i id="right" class="fa-solid fas fa-angle-right" style="color: #6e756f;"></i>
     </div>
 
     <style>
@@ -369,7 +373,8 @@ p {
 
  }
 
-.wrapper i {
+@media screen and (min-width: 620px) {
+  .wrapper i {
     height: 50px;
     width: 50px;
     background: rgb(109, 122, 109);
@@ -381,9 +386,28 @@ p {
     top: 50%;
     font-size: 1.25 rem;
     transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+   
 
 }
+  
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: rgba(109, 122, 109, 0);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25 rem;
+    transform: translateY(-50%);
+    
+  }
+
+ 
 
 .wrapper i:first-child {
     left: -22px;
@@ -434,7 +458,7 @@ p {
     scroll-snap-align: start;
     height: 40vh;
     list-style: none;
-    border-radius: 18px;
+    border-radius: 30px;
     display: flex;
     cursor: pointer;
     width: 98%;
@@ -582,7 +606,7 @@ p {
         </div>
       </div>
        
-      <div class="overflow-hidden bg-white py-24 sm:py-32 bg-gradient-rev">
+      <div class="overflow-hidden bg-white  sm:py-12 bg-gradient-rev">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             <div class="lg:pr-8 lg:pt-4">
@@ -618,8 +642,10 @@ p {
           </div>
                 </dl>
               </div>
-              <div class=" px-6 mx-10">
-                <button class="px-2 py-2 bg-gray-900 text-white rounded-md mt-8 mx-auto text-center">Contact us</button> 
+              <div class="w-full flex justify-center">
+                <a href="./contact.html">
+                  <button class=" py-2 px-4 bg-gray-900 hover:bg-gray-600 text-white rounded-md mt-8  text-center">Contact us</button> 
+                </a>
               </div>
            
             </div>
@@ -628,11 +654,11 @@ p {
         </div>
       </div>
 
-      <div class="bg-gradient">
-        <h3 class="font-bold text-3xl text-center px-10 kanit-medium ">Our Shops</h3>
-        <section class="about grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-2 gap-6 lg:w-[80%] mx-auto" id="about">
+      <div class="bg-gradient py-12">
+        <h3 class="font-bold text-4xl text-center px-10 pb-8 kanit-medium ">Our Shops</h3>
+        <section class="about grid grid-cols-2 max-sm:grid-cols-1 gap-6 my-8 lg:w-[80%] mx-auto" id="about">
           <div class=" ">
-            <img src="imgs-comp/nov,.jpg" alt="Store Image" class="w-[60%] min-w-[200px] rounded-lg mx-auto">
+            <img src="imgs-comp/shop-1.webp" alt="Store Image" class="w-[60%] min-w-[300px] rounded-lg mx-auto">
           </div>
             <div>
               <h3 class="font-bold font-sans text-2xl my-4 kanit-medium">Shop 1</h3>
@@ -642,32 +668,31 @@ p {
             </div>
         </section>
         
-        <section class="about grid grid-cols-2 max-sm:grid-cols-1 max-sm:grid-rows-2 gap-8 lg:w-[80%] mx-auto" id="about">
+        <section class="about grid grid-cols-2 max-sm:grid-cols-1 gap-8 lg:w-[80%] mx-auto" id="about">
           
-            <div class=" md:mt-10">
+            <div class="mt-4 md:mt-12">
               <h3 class="font-bold text-2xl  text-center my-4 kanit-medium">Shop 2</h3>
               <p class="kanit-regular">
-                Novelty Dresses, Jabalpur – Your go-to for trendy, elegant fashion! From ethnic wear to party outfits, we offer the finest fabrics and designs for every occasion. Your ultimate destination for chic and timeless fashion! Whether it’s traditional ethnic wear for a family gathering, contemporary outfits for casual outings, or dazzling party ensembles, we have something special for everyone. Our collection boasts premium fabrics, intricate craftsmanship, and exclusive designs that reflect elegance and individuality.
-               
+                Novelty Dresses, Jabalpur – Your go-to for trendy, elegant fashion! From ethnic wear to party outfits, we offer the finest fabrics and designs for every occasion. Your ultimate destination for chic and timeless fashion! 
               </p>
-              <p class="kanit-regular my-4">
-                At Novelty Dresses, we prioritize quality and customer satisfaction, ensuring you find the perfect fit for every occasion. Step into our store to experience unparalleled style and sophistication. Redefine your wardrobe with the latest trends – because you deserve to shine in every moment!
+              <p class="kanit-regular my-2">
+                At Novelty Dresses, we prioritize quality and customer satisfaction, ensuring you find the perfect fit for every occasion.  Redefine your wardrobe with the latest trends – because you deserve to shine in every moment!
             
                 <br>
                 Visit us today and embrace the magic of fashion.
 
             </p>
             </div>
-            <div class=" max-sm:row-start-1 ">
-              <img src="imgs-comp/shop2.jpg" alt="Store Image" class="w-[60%] rounded-lg min-w-[200px] mx-auto">
+            <div class=" max-sm:row-start-1 md:mt-12" >
+              <img src="imgs-comp/shop-2.webp" alt="Store Image" class="w-[60%] rounded-lg min-w-[300px] mx-auto">
             </div>
     
         </section>
       </div>
    
 
-    <div class="my-3 py-3 bg-gradient-rev" id="career">
-      <h3 class="font-bold text-2xl  text-center px-10 kanit-medium">Our Factory</h3>
+    <div class=" py-12 bg-gradient-rev" id="career">
+      <h3 class="font-bold text-4xl  text-center px-10 py-8 kanit-medium">Our Factory</h3>
       <div class="grid grid-cols-2 max-sm:grid-cols-1 my-6">
         <div>
           <img src="./imgs-comp/img2 (2).webp" class="w-[60%] mx-auto" alt="">
@@ -733,10 +758,9 @@ p {
       <div class="container px-6 pt-14 mx-auto ">
           <div class="lg:flex justify-center">
               <div class="w-full  lg:w-2/5  ">
-                  <div class="px-0">
-                      <a href="./index.html" class="">
-                          <img class="w-auto h-[8rem] mx-auto " src="./images/Novelty logo.png" alt="">
-                      </a>
+                  <div class="px-0 ">
+                     
+                    <h2>Address</h2>
   
                       <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 text-center">
                        
@@ -769,9 +793,13 @@ p {
                       </div>
                   </div>
               </div>
-  
-              <div class="mt-6 lg:mt-6 lg:flex-1">
-                  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              <div class=" lg:w-1/5">
+                <a href="./index.html" class="">
+                  <img class="w-auto h-[8rem] mx-auto " src="./images/Novelty logo.png" alt="">
+              </a>
+              </div>
+              <div class=" lg:flex-1">
+                  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
                       <div class="text-center">
                           <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">Links</h3>
                           <a href="./about.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">About us</a>
@@ -786,17 +814,13 @@ p {
                         <a href="./medical-uniform.html" class="block mt-2 text-md text-gray-800  font-semibold  dark:text-gray-400 hover:underline">Kids Uniform </a>
                     </div>
   
-                    <div class="text-center">
-                      <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">Explore more</h3>
-                      <a href="./about.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">About us</a>
-                       <a href="./product.html" class="block mt-2 text-md text-gray-800 font-semibold  dark:text-gray-400 hover:underline">Products</a>
-                      <a href="./contact.html" class="block mt-2 text-md text-gray-800  font-semibold  dark:text-gray-400 hover:underline">Contact us</a>
-                  </div>
+                   
   
                       <div class="text-center">
                           <h3 class="text-gray-900 text-lg font-bold uppercase dark:text-white my-4">Contact</h3>
                           <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 07612481581</span>
-                          <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">noveltydresses1@gmail.com</span>
+                          <span class="block mt-2 text-md font-semibold text-gray-800 wrap dark:text-gray-400 hover:underline">
+                            noveltydresses1@gmail.com</span>
                       </div>
                   </div>
               </div>
@@ -900,6 +924,17 @@ document.querySelector('[aria-controls="mobile-menu"]').addEventListener('click'
     this.setAttribute('aria-expanded', !isExpanded);
     mobileMenu.classList.toggle('hidden');
   });
+
+  document.addEventListener('scroll', () => {
+    const scrollThreshold = 800; // Set your desired scroll position
+    const targetElement = document.getElementById('navb');
+
+    if (window.scrollY > scrollThreshold) {
+        targetElement.classList.add('nav-gradient');
+    } else {
+        targetElement.classList.remove('nav-gradient');
+    }
+});
 
 
     </script>

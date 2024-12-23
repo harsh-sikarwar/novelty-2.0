@@ -239,63 +239,69 @@ p {
 
 
 .bg-gradient{
-   background: linear-gradient(180deg, #6ac87e8a, #fff);
+    background: linear-gradient(360deg, #6ac87e8a, #fff);
 }
+
+
+.nav-gradient{
+    background-color: #ffffffa5;
+} 
+
 .bg-gradient-rev{
     background: linear-gradient(360deg, #6ac87e8a, #fff);
 }
 
 #one{
-    background-image: url(./imgs-comp/1.webp);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-#two{
     background-image: url(./imgs-comp/2.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
+#two{
+    background-image: url(./imgs-comp/tunic\ and\ frock.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #three{
-    background-image: url(./imgs-comp/3.webp);
+    background-image: url(./imgs-comp/corporate-card.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #four{
-    background-image: url(./imgs-comp/4.webp);
+    background-image: url(./imgs-comp/hospital-card.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #five{
-    background-image: url(./imgs-comp/5.webp);
+    background-image: url(./imgs-comp/housekeeping-card.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #six{
-    background-image: url(./imgs-comp/6.webp);
+    background-image: url(./imgs-comp/shoes.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #seven{
-    background-image: url(./imgs-comp/7.webp);
+    background-image: url(./imgs-comp/security-card.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #eight{
-    background-image: url(./imgs-comp/8.webp);
+    background-image: url(./imgs-comp/accessories-card.webp);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -331,4 +337,21 @@ p {
     font-family: "Kanit", serif;
     font-weight: 800;
     font-style: normal;
+  }
+
+  .hero-i{
+    background-image: url(./imgs-comp/Novelty\ Dresses\ \(1\).webp);
+    background-attachment: fixed;
+    background-size: cover;
+
+  }
+
+  .bg-gradient2{
+    background: linear-gradient(3600deg, #6ac87e8a, #00000000); /* Gradient color mask */
+/* Blends the gradient with the image for a unique effect */
+    pointer-events: none; /* Makes the overlay non-interactive */
+  }
+
+  .grn{
+    color: #6ac87e !important;
   }
