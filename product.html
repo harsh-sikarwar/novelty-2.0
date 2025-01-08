@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
+    <title>Products</title>
+    <link rel="shortcut icon" href="./imgs-comp/Novelty logo.png" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -163,12 +164,21 @@
     font-style: normal;
   }
 
+  @media (min-width: 768px) {
+    .prod-imgs img{
+  max-width: 50%;
+ }
+  }
+
+ 
+
     </style>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+     
      <link rel="stylesheet" href="dist/output.css">
+     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <nav class="bg-gradient">
@@ -199,7 +209,7 @@
             </div>
             <div class="flex flex-1 items-center justify-between">
               <div class="flex shrink-0 items-center">
-                <img class="h-[6rem] w-auto" src="./images/Novelty logo.png" alt="Novelty logo">
+                <a href="./index.html"> <img class="h-[6rem] w-auto" src="./imgs-comp/Novelty logo.png" alt="Novelty logo"></a>
                 <p class="font-bold text-lg mx-4"> </p>
               </div>
               <div class="hidden sm:ml-2 sm:block">
@@ -208,7 +218,7 @@
                   <a href="./index.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600 " aria-current="page">Home</a>
                   <a href="./about.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">About Us</a>
                   <a href="./product.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Products</a>
-                  <a href="./index.html#career" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Career</a>
+                  <a href="./index.html#career" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Factory</a>
                   <a href="./contact.html" class="rounded-md px-3 py-2 text-md font-bold kanit-medium hover:underline underline-offset-8 text-gray-900 hover:text-gray-600">Contact Us</a>
                 </div>
               </div>
@@ -224,52 +234,166 @@
             <a href="./index.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">Home</a>
             <a href="./about.html"class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">About Us</a>
             <a href="./product.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">Products</a>
-            <a href="./index.html#career" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">Career</a>
+            <a href="./index.html#career" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">Factory</a>
             <a href="./contact.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-700 hover:text-white">Contact Us</a>
           </div>
         </div>
       </nav>
-    <div class="container w-[80%] mx-auto py-12 my-6">
-        <h1 class="font-bold text-5xl max-sm:text-4xl text-center kanit-semibold">Products</h1>
-        <p class=" text-2xl max-sm:text-xl text-center mb-8 kanit-regular">We have best quality clothes available</p>
-        <div class=" grid grid-cols-2 max-sm:grid-cols-1 my-6 pt-10 gap-4 max-sm:gap-0">
+    <div class="container w-[80%] mx-auto py-12 my-12">
+        <h1 class="font-bold text-5xl max-sm:text-4xl text-center my-2 kanit-semibold">Products</h1>
+        <p class=" text-2xl max-sm:text-xl text-center mb-10 mt-2 kanit-regular">We have best quality clothes available</p>
+        <div class=" grid grid-cols-2 max-sm:grid-cols-1 my-6 md:mt-12 md:pt-12 gap-4 max-sm:gap-0">
             <div class=" max-sm:py-4">
-                <img src="imgs-comp/schooluniform.webp" class="rounded-md w-[70%] ml-10% max-sm:mx-auto" alt="">
+                <img src="imgs-comp/prd-1.webp" class="rounded-md w-[70%] ml-10% max-sm:mx-auto" alt="">
             </div>
            
-            <div class=" max-sm:py-4 md:mt-16 sm:text-center">
-                <h3 class="font-semibold text-2xl my-2 max-sm:text-center kanit-medium "> Best quality of clothes available,</h3>
+            <div class=" max-sm:py-6  sm:text-center">
+                <h3 class="font-semibold text-3xl my-4 max-sm:text-center text-left kanit-medium "> Best quality of clothes available</h3>
                
-                <p class="font-normal text-1xl max-sm:text-center kanit-regular">
+                <p class="font-normal max-sm:text-[1rem] text-[1.2rem] my-2 max-sm:text-center text-left kanit-regular">
                     Our uniform collection is crafted from durable, comfortable fabrics designed to provide a professional, polished look while ensuring comfort throughout the day. Whether for healthcare, corporate, or hospitality industries, our uniforms combine style, practicality, and durability to meet the demands of various work environments.
                 </p>
-                <p class="font-normal text-1xl max-sm:text-center kanit-regular my-2">
+                <p class="font-normal max-sm:text-[1rem] text-[1.2rem] max-sm:text-center text-left kanit-regular my-2">
                     Additionally, our uniform innerwear is designed with comfort in mind, providing essential support for both adults and children. Made from soft, breathable materials, our innerwear ensures a smooth fit and lasting comfort, making it the perfect foundation for any uniform. Whether for work or school, Novelty Dresses provides dependable, quality clothing solutions that meet your needs with excellence.
                 </p>
                 
             </div>
         </div>
 
-        <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-6">
-            <div class=" max-sm:py-4 mt-16">
-                    <h3 class="font-semibold text-2xl my-4 kanit-medium">School Uniforms</h3>
-                    <p class="font-normal text-1xl mb-4 text-gray-600 kanit-regular">
-                        For school uniforms, we offer a wide range of styles that prioritize comfort, durability, and ease of movement, making them perfect for active students. Our school uniforms are designed to withstand daily wear while maintaining a crisp, neat appearance, helping students feel confident and comfortable throughout their school day.
-                    </p>
+        <!-- <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-6">
+            <div class=" max-sm:py-4 mt-16 pt-6 ">
+                    <div>
+                      <h3 class="font-semibold text-3xl mt-12 kanit-medium my-4">School Uniforms</h3>
+                      <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                        Combining comfort, durability, and style, our school uniforms are designed to support students through their daily activities. From crisp shirts to sturdy blazers, we ensure every piece is crafted for excellence
+                      </p>
+                    </div>
+                   
         
-                    <h3 class="font-semibold text-2xl my-4 kanit-medium">Nursery Uniform</h3>
-                    <p class="font-normal text-1xl mb-4 text-gray-600 kanit-regular">
-                        Novelty Dresses specializes in high-quality, durable, and stylish kids' uniforms. We offer a wide range of comfortable and affordable options for schools, ensuring every child looks smart and feels confident. Our commitment to quality and customer satisfaction makes us the trusted choice for uniforms.
-                    </p>
+                    <div>
+                      <h3 class="font-semibold text-3xl mt-12 pt-12 kanit-medium my-4">Office uniforms</h3>
+                      <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-4 text-gray-600 kanit-regular">
+                        Combining comfort, durability, and style, our school uniforms are designed to support students through their daily activities. From crisp shirts to sturdy blazers, we ensure every piece is crafted for excellence
+                      </p>
+                    </div>
+                 
                 
             </div>
-            <div class=" max-sm:py-4 flex justify-between max-sm:row-start-1">
-                <img src="imgs-comp/nov221.webp" class="rounded-md w-[40%] mx-auto" alt="">
-                <img src="imgs-comp/nov22.webp" class="rounded-md w-[40%] mx-auto" alt="">
+            <div class=" max-sm:py-4 grid mt-16 pt-6  max-sm:row-start-1 prod-imgs">
+              <img src="imgs-comp/prod-3.webp" class="rounded-md mx-auto my-6" alt="">
+                <img src="imgs-comp/produt-pg-crp.png" class="rounded-md mx-auto my-6 object-cover" alt="">
+               
             </div>
 
         </div>
+        <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-6">
+          <div class=" max-sm:py-4 mt-16 pt-6">
+                  <h3 class="font-semibold text-3xl mt-12 kanit-medium my-4">Housekeeping and Hospitality Uniforms</h3>
+                  <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                    Our housekeeping and hospitality uniforms are crafted for practicality, comfort, and a polished appearance. From durable housekeeping attire to elegant server uniforms, we cater to the unique needs of the industry. With custom branding options, we ensure your team represents your brand with pride.
+                  </p>
+      
+                  <h3 class="font-semibold text-3xl mt-12 pt-12 kanit-medium my-4">Hospital uniforms</h3>
+                  <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-4 text-gray-600 kanit-regular">
+                    Our hospital uniforms are designed with comfort and hygiene in mind, ensuring healthcare professionals can perform their best. Made from breathable, easy-to-clean fabrics, they provide durability and flexibility. With custom options available, we cater to the unique needs of medical staff.
+                  </p>
+              
+          </div>
+          <div class=" max-sm:py-4 grid mt-16 pt-6 justify-between max-sm:row-start-1 prod-imgs">
+            <img src="imgs-comp/prod-3.webp" class="rounded-md mx-auto my-6" alt="">
+              <img src="imgs-comp/prod-12.webp" class="rounded-md mx-auto my-6" alt="">
+             
+          </div>
 
+      </div>
+      <div class=" grid grid-cols-2 max-sm:grid-cols-1 gap-4 my-6">
+        <div class=" max-sm:py-4 mt-16 pt-6">
+                <h3 class="font-semibold text-3xl mt-12 kanit-medium my-4">Industial Uniforms</h3>
+                <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                  Our industrial uniforms are built to withstand tough environments while ensuring safety and comfort. Made from durable, high-quality fabrics, they offer protection and functionality for various industries. With customizable designs, we provide uniforms that meet your specific work requirements.
+                </p>
+    
+                <h3 class="font-semibold text-3xl mt-12 pt-12 kanit-medium my-4">Security Uniforms</h3>
+                <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-4 text-gray-600 kanit-regular">
+                  Our security uniforms are designed for both comfort and functionality, ensuring your team is ready for any situation. Made with durable, high-performance fabrics, they provide long-lasting wear and enhanced visibility. Customizable options are available to represent your security company's professional image.
+                </p>
+
+        </div>
+        <div class=" max-sm:py-4 grid mt-16 pt-6 justify-between max-sm:row-start-1 prod-imgs">
+          <img src="imgs-comp/prod-3.webp" class="rounded-md mx-auto my-6" alt="">
+            <img src="imgs-comp/prod-12.webp" class="rounded-md mx-auto my-6" alt="">
+           
+        </div>
+
+    </div> -->
+    <div class="grid md:grid-cols-4 grid-cols-1 mt-12 pt-12 ">
+  <div class="md:col-span-3 md:mx-12">
+    <h3 class="font-semibold text-3xl mt-12 kanit-medium my-2">School Uniforms</h3>
+                      <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                        Combining comfort, durability, and style, our school uniforms are designed to support students through their daily activities. From crisp shirts to sturdy blazers, we ensure every piece is crafted for excellence
+                      </p>
+  </div>
+  <div class="max-sm:row-start-1 mt-6">
+    <img src="imgs-comp/school-prd.webp" class="rounded-md mx-auto my-2" alt="">
+  </div>
+    </div>
+    <div class="grid md:grid-cols-7 grid-cols-1 mt-12 ">
+      <div class="md:col-span-5 md:mx-12">
+        <h3 class="font-semibold text-3xl mt-12 kanit-medium my-4">College Uniforms</h3>
+                          <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                            Crafted with attention to detail, they complement any corporate or professional attire. Custom monograms and designs allow for a unique, branded look for your team. Our office uniforms are designed to provide a professional appearance while ensuring comfort and durability throughout the day.
+                          </p>
+      </div>
+      <div class="max-sm:row-start-1 md:col-span-2 mt-6">
+        <img src="imgs-comp/produt-pg-crp.webp" class="rounded-md mx-auto my-2" alt="">
+      </div>
+    </div>
+
+        
+          <div class="grid md:grid-cols-7 grid-cols-1 mt-12 ">
+            <div class="max-sm:row-start-1 md:col-span-2 mt-6 ">
+              <img src="imgs-comp/security-prd.webp" class="rounded-md mx-auto my-6" alt="">
+            </div>
+            <div class="md:col-span-5 md:ml-12 ">
+              <h3 class="font-semibold text-3xl  mt-12 kanit-medium my-4">Security Uniforms</h3>
+                                <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                                  Our security uniforms are designed for both comfort and functionality, ensuring your team is ready for any situation. Made with durable, high-performance fabrics, they provide long-lasting wear and enhanced visibility. Customizable options are available to represent your security company's professional image.
+                                </p>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-7 grid-cols-1 mt-12 ">
+          <div class="max-sm:row-start-1 md:col-span-2 mt-6 ">
+            <img src="imgs-comp/housekeeping-prd.webp" class="rounded-md mx-auto my-6" alt="">
+          </div>
+          <div class="md:col-span-5 md:ml-12 ">
+            <h3 class="font-semibold text-3xl  mt-12 kanit-medium my-4">Housekeeping and Hospitality Uniform</h3>
+                              <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                                Our housekeeping and hospitality uniforms are crafted for practicality, comfort, and a polished appearance. From durable housekeeping attire to elegant server uniforms, we cater to the unique needs of the industry. With custom branding options, we ensure your team represents your brand with pride.
+                              </p>
+          </div>
+      </div>
+                <div class="grid md:grid-cols-4 grid-cols-1 mt-12 ">
+                  <div class="md:col-span-3 md:mx-12">
+                    <h3 class="font-semibold text-3xl mt-12 kanit-medium my-2">Hospital Uniforms</h3>
+                                      <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                                        Our hospital uniforms are designed with comfort and hygiene in mind, ensuring healthcare professionals can perform their best. Made from breathable, easy-to-clean fabrics, they provide durability and flexibility. With custom options available, we cater to the unique needs of medical staff
+                                      </p>
+                  </div>
+                  <div class="max-sm:row-start-1 mt-6">
+                    <img src="imgs-comp/doctor-prd.webp" class="rounded-md mx-auto my-2" alt="">
+                  </div>
+                    </div>
+                    <div class="grid md:grid-cols-7 grid-cols-1 mt-12 ">
+                      <div class="md:col-span-5 md:mx-12">
+                        <h3 class="font-semibold text-3xl mt-12 kanit-medium my-4">Industial Uniforms</h3>
+                                          <p class="font-normal max-sm:text-[1rem] text-[1.2rem] mb-10 text-gray-600 kanit-regular">
+                                             we ensure every piece is crafted for excellenceOur industrial uniforms are built to withstand tough environments while ensuring safety and comfort. Made from durable, high-quality fabrics, they offer protection and functionality for various industries. With customizable designs, we provide uniforms that meet your specific work requirements.
+                                          </p>
+                      </div>
+                      <div class="max-sm:row-start-1 md:col-span-2 mt-6">
+                        <img src="imgs-comp/produt-pg-crp.webp" class="rounded-md mx-auto my-2" alt="">
+                      </div>
+                        </div>
     </div>
 
     <div class="my-6 px-4">
@@ -330,73 +454,122 @@
     </div>
 
 
-    <div class="bg-white px-[10%] max-sm:px-[25%]">
+    <div class="bg-white px-[10%]">
         <div class="mx-auto max-w-2xl px-[20px] py-16  sm:py-24 lg:max-w-7xl lg:px-[10%]">
-          <h2 class="font-bold text-3xl my-4 text-center">Clothes We Provide</h2>
+          <h2 class="font-bold text-3xl my-4 text-center">Our Associates</h2>
       
-          <div class="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[5%]">
+          <div class="grid grid-cols-2 max-sm-gap-x-12 gap-x-6 gap-y-10  lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-[5%]">
             <a href="#" class="group">
-              <img src="./images/Mafatlal_logo.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              <img src="./imgs-comp/Mafatlal_logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
             </a>
             <a href="#" class="group">
-                <img src="./images/bajaj logo.jpeg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                <img src="./imgs-comp/bajaj logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
               </a>
               <a href="#" class="group">
-                <img src="./images/siyaram-logo.jpg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                <img src="./imgs-comp/siyaram-logo.webp" alt="" class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
               </a>
               <a href="#" class="group">
-                <img src="./images/Valji_logo.png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                <img src="./imgs-comp/Valji_logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
               </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/Unitex logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (1).png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (1).svg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (2).png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (3).png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (4).png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/hp (5).png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                <img src="./imgs-comp/aloisis-logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+              </a>
+              <a href="#" class="group">
+                  <img src="./imgs-comp/billabong-logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                <a href="#" class="group">
+                  <img src="./imgs-comp/christ church.webp" alt="" class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                <a href="#" class="group">
+                  <img src="./imgs-comp/gd-goenka-logo.jpeg" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                <a href="#" class="group">
+                  <img src="./imgs-comp/kangroo-logo.png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                <a href="#" class="group">
+                  <img src="./imgs-comp/staya-prakash-logo.png" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                <a href="#" class="group">
+                  <img src="./imgs-comp/st-josheph-logo.webp" alt="Tall slender porcelain bottle with natural clay textured body and cork stopper." class="aspect-square w-full rounded-lg  object-contain group-hover:opacity-75 xl:aspect-[7/8]">
+                </a>
+                
       
-            <!-- More products... -->
+           
           </div>
         </div>
       </div>
       
 
-      <footer class="bg-white dark:bg-gray-900">
-        <div class="container px-6 pt-14 mx-auto ">
+    <footer class="bg-white dark:bg-gray-900 overflow-x-hidden">
+        <div class="container px-4 pt-14 mx-auto ">
             <div class="lg:flex justify-center">
                 <div class="w-full  lg:w-2/5  ">
-                    <div class="px-0">
-                        <a href="./index.html" class="">
-                            <img class="w-auto h-[8rem] mx-auto " src="./images/Novelty logo.png" alt="">
-                        </a>
-    
-                        <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 text-center">
-                         
-                          Branch 1 - Main Road, Malaviya Chowk, Jabalpur - 482002 (Near George Town Market) | 
-                          <br>
-                          Branch 2 - Deshbandhu Complex, Naudra Bridge,  Jabalpur - 482001
+                  <div class="px-0 ">
+                     
+                    <h2 class="text-gray-900  text-center text-lg uppercase dark:text-white font-bold my-4">Address</h2>
   
+                    <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 ">
+                       
+                      Branch 1 - Near Shyam talkies, Malaviya Chowk, Jabalpur - 482002 (Near George Town Market) | 
+                    </p>
+                    <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 ">
+                      Branch 2 - Deshbandhu Complex, Naudra Bridge,  Jabalpur - 482001 |
+                    </p>
+                    <p class=" mx-auto max-w-sm mt-2 text-gray-500 dark:text-gray-400 ">
+                      Factory - Shop no. 88/89, lema garden, readymade garden cluster
+                      GOHALPUR
+                    </p>
   
-                        </p>
-    
-                        <div class="flex mt-6 -mx-2 justify-center ">
-                            <a href="https://www.instagram.com/noveltydresses"
-                                class="mx-2 text-gray-800 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                                aria-label="Reddit">
-                              <img src="./imgs-comp/black-instagram-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
-                              
-                            </a>
-                        
-                            <a href="https://wa.me/917612481581"
-                            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                            aria-label="Github">
-                            <img src="./imgs-comp/whatsapp-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
-                        </a>
-  
-                            <a href="https://www.facebook.com/Noveltydresses"
-                            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-                            aria-label="Github">
-                            <img src="./imgs-comp/facebook-app-round-icon.svg" alt="" class="w-5 hover:bg-gray-200 " srcset="">
-                        </a>
-                        </div>
-                    </div>
+                      <div class="flex mt-6 -mx-2 justify-center ">
+                          <a href="https://www.instagram.com/noveltydresses"
+                              class="mx-2 text-gray-800 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 bg-white p-1 rounded-lg"
+                              aria-label="Reddit">
+                            <img src="./imgs-comp/black-instagram-icon.svg" alt="" class="max-sm:w-7 w-5 hover:bg-gray-200 " srcset="">
+                            
+                          </a>
+                      
+                          <a href="https://wa.me/917612481581"
+                          class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 bg-white rounded-lg p-1"
+                          aria-label="Github">
+                          <img src="./imgs-comp/whatsapp-icon.svg" alt="" class="max-sm:w-7 w-5 hover:bg-gray-200 " srcset="">
+                      </a>
+
+                          <a href="https://www.facebook.com/Noveltydresses"
+                          class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 bg-white rounded-lg p-1"
+                          aria-label="Github">
+                          <img src="./imgs-comp/facebook-app-round-icon.svg" alt="" class="max-sm:w-7 w-5 hover:bg-gray-200 " srcset="">
+                      </a>
+                      </div>
+                  </div>
                 </div>
-    
-                <div class="mt-6 lg:mt-6 lg:flex-1">
-                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                <div class=" lg:w-1/5 max-sm:mt-6">
+                  <a href="./index.html" class="">
+                    <img class="w-auto h-[8rem] mx-auto " src="./imgs-comp/Novelty logo.png" alt="">
+                </a>
+                </div>
+                <div class=" lg:flex-1 lg:pr-6 lg:mr-2">
+                    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 ">
                         <div class="text-center">
                             <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">Links</h3>
                             <a href="./about.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">About us</a>
@@ -405,23 +578,24 @@
                         </div>
     
                         <div class="text-center">
-                          <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">Our products</h3>
-                          <a href="./medical-uniform.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">School Uniform </a>
-                          <a href="./medical-uniform.html" class="block mt-2 text-md text-gray-800 font-semibold  dark:text-gray-400 hover:underline">Office Dresses </a>
-                          <a href="./medical-uniform.html" class="block mt-2 text-md text-gray-800  font-semibold  dark:text-gray-400 hover:underline">Kids Uniform </a>
+                          <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">products</h3>
+                          <a href="./medical-uniform.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">Corporate Uniform </a>
+                          <a href="./corporate-uniform.html" class="block mt-2 text-md text-gray-800 font-semibold  dark:text-gray-400 hover:underline">Doctor Uniform </a>
+                          <a href="./product.html" class="block mt-2 text-md text-gray-800  font-semibold  dark:text-gray-400 hover:underline">Kids Uniform </a>
                       </div>
     
-                      <div class="text-center">
-                        <h3 class="text-gray-900  text-lg uppercase dark:text-white font-bold my-4">Explore more</h3>
-                        <a href="./about.html" class="block mt-2 text-md text-gray-800 font-semibold dark:text-gray-400 hover:underline">About us</a>
-                         <a href="./product.html" class="block mt-2 text-md text-gray-800 font-semibold  dark:text-gray-400 hover:underline">Products</a>
-                        <a href="./contact.html" class="block mt-2 text-md text-gray-800  font-semibold  dark:text-gray-400 hover:underline">Contact us</a>
-                    </div>
+                     
     
                         <div class="text-center">
                             <h3 class="text-gray-900 text-lg font-bold uppercase dark:text-white my-4">Contact</h3>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">+91 07612481581</span>
-                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">noveltydresses1@gmail.com</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">
+                              +91 07612481581</span>
+                              <span class="block mt-2 text-md font-semibold text-gray-800 dark:text-gray-400 hover:underline">
+                                +91 07614081580</span>
+                            <span class="block mt-2 text-md font-semibold text-gray-800 text-wrap dark:text-gray-400 hover:underline">
+                              noveltydresses1
+                              <br class="max-sm:hidden">@gmail.com</span>
+                              <a href="./contact.html" class=""><button class=" mt-2 block w-full rounded-md bg-green-700 px-2.5 py-1.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Order for Bulk Manufacturing</button></a>
                         </div>
                     </div>
                 </div>
@@ -430,7 +604,8 @@
             <hr class="h-px my-6 bg-gray-200 border-none dark:bg-gray-700">
     
             <div class="text-center">
-                <p class="text-center text-gray-500 dark:text-gray-400 mx-auto">© Novelty Dresses - All rights reserved | Made with ❤️ by STARIAL </p>
+                <p class="text-center text-gray-500 dark:text-gray-400 mx-auto">© Novelty Dresses - All rights reserved | Made with ❤️ by 
+                 <a href="https://starial.in/" class="text-blue-400"> STARIAL</a></p>
             </div>
         </div>
     </footer>
